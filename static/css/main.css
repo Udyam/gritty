@@ -1,0 +1,125 @@
+/* Set padding and height of the body and html tags for the responsive layout */
+
+body,p,h1,h2,div,input,form,label,*{
+	margin : 0;
+	padding : 0;
+}
+
+html,body {
+	height : 100%;
+}
+
+body {
+	font-family: Ubuntu,Helvetica,Tahoma,sans-serif;
+}
+
+header { /* first set the height of the element just after body tag */
+	height: 20%;
+}
+
+
+nav {
+	border-bottom: 4px solid #2ec866;
+	height: 100%;
+}
+
+nav .brand-logo {
+	padding-top: 1%;
+	letter-spacing: 0.1em;
+	font-family: Georgia;
+	font-size: 500%;
+	font-weight: bold;
+	height: 100%;
+}
+
+#contents {
+	margin-top: 2%;
+	height: 80%;
+	margin-right: 2%;
+	width: 30%;
+}
+
+#contents .btn {
+	margin-right: 2%;
+}
+
+.nav-wrapper img {
+	display: inline-block;
+	margin-left : 1.5%;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.button-collapse {
+	margin-right: 1%;
+}
+
+/*Hero Image Effect*/
+
+#heroEffect
+{
+	font-family: "Roboto",sans-serif;
+	font-weight: 400;
+	background-color: #f4f4f4;
+	
+}
+
+#heroEffect h1{
+	font-size: 3.0em;
+}
+
+#heroEffect p{
+	font-size: 1.2em;
+}
+
+.hero
+{
+	height: 500px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url('../img/hero.jpg');
+	overflow: hidden;
+}
+
+.hero-content
+{
+	padding: 10px;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	color: #fff;
+	font-size: 1.4em;
+	text-align: center;
+	text-shadow: 1px 2px 0 #000;
+}
+
+/* Footer */
+
+footer
+{
+	margin:0;
+	background-color: #333;
+	font-family: "Roboto",sans-serif;
+	font-size: 1.0em;
+}
+
+footer .footer-copyright
+{
+	color: #FFF;
+	background-color: #222;
+}
+
+/* social links in footer */
+.social
+{
+	margin-right: 2em;
+	font-size: 2em;
+}
+
+#footlinks li a:hover {
+	text-decoration: underline;
+}

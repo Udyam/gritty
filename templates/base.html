@@ -1,0 +1,75 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<!-- @author: Ankush Sharma-->
+<!-- @mail : ankprashar@gmail.com-->
+
+<html lang="en">
+
+	<head>
+
+		<title> Gritty </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="A quizzing platform">
+		<meta name="keywords" content="Gritty,quizzing-platform,python-quiz,django-quiz">
+		<meta name="author" content="Ankush-Sharma,Shivam-Verma,IIT-BHU,black-perl">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- import materialize -->
+      	<link type="text/css" rel="stylesheet" href={% static "vendor/materialize/css/materialize.min.css" %} media="screen,projection"/>
+      	<!-- Animate css -->
+		<link rel="stylesheet" href={% static "vendor/animate.css" %} type="text/css" />
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href={% static "vendor/font-awesome/css/font-awesome.min.css" %} type="text/css" />
+		<!-- Custom CSS -->
+		{% block css %}
+		{% endblock %}
+	</head>
+
+	<body>
+		{% block content %}
+		{% endblock %}
+		
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col l6 s12">
+						<h5 class="white-text">GitHub</h5>
+						<p class="grey-text lighten-4 github">
+							Contribute to this open source project !
+							<a class="lighten-4 social text-center" href="https://github.com/black-perl">&nbsp;<i class="fa fa-github-alt" ></i></a>
+						</p> 
+						<h5 class="white-text">Twitter</h5>
+						<p class="grey-text lighten-4 github">
+							Follow on twitter.
+							<a class="lighten-4 social text-center" href="https://twitter.com/ankprashar">&nbsp;<i class="fa fa-rocket" style="color:#448aff;"></i></a>
+						</p>
+					</div>
+
+					<div class="col l4 offset-l2 s12">
+						<h5 class="white-text">Links</h5>
+						<ul id="footlinks">
+							<li><a class="grey-text lighten-3" href="/">Home</a></li>
+							<li><a class="grey-text lighten-3" href="http://udyamfest.org">Udyam</a></li>
+							<li><a class="grey-text lighten-3" href="http://udyamfest.org/events.html#code42day">Code42day</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					© 2015 Ankush Sharma - All Rights Reserved
+				</div>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src={% static "vendor/fittext.js" %}></script>
+		<!--Import jQuery before materialize.js-->
+     	<script type="text/javascript" src={% static "vendor/jquery/jquery.js" %}></script>
+     	<!-- Import Materialize.js -->
+      	<script type="text/javascript" src={% static "vendor/materialize/js/materialize.min.js" %}></script>
+      	<script type="text/javascript" src={% static "js/script.js" %}></script>
+	</body>
+
+</html>
+
