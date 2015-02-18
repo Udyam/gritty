@@ -2,7 +2,7 @@
 Production settings for the Gritty Project
 
 '''
-from . import base
+from base import *
 
 DEBUG = False
 
