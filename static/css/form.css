@@ -1,0 +1,69 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+header {
+	height: 40%;
+}
+
+main {
+	margin-top: 5%;
+}
+
+.banner
+{
+	height: 100%;
+	background-color: #000;
+	background-image: url(/static/img/banner.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	margin: 0 auto;
+	height: 20%;
+	width: 20%;
+	display: block;
+}
+
+button {
+}
+footer
+{
+	margin:0;
+	background-color: #333;
+	font-family: "Roboto",sans-serif;
+	font-size: 1.0em;
+}
+
+footer .footer-copyright
+{
+	color: #FFF;
+	background-color: #222;
+}
+
+/* social links in footer */
+.social
+{
+	margin-right: 2em;
+	font-size: 2em;
+}
+
+#footlinks li a:hover {
+	text-decoration: underline;
+}
+
+.tabs li.tab a
+{
+	color: #03a9f4;
+	font-weight: bold;
+	font-family: helvetica,serif;
+}
+
+.tabs li.tab a:hover
+{
+	color: #4fc3f7;
+}
