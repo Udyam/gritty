@@ -9,49 +9,51 @@
 
 <header>
 	<div class="banner">
-		<img src="{% static "img/logo.png" %}" alt="Gritt-logo" class="responsive-img logo">
+		<img src="{% static "img/logo.png" %}" alt="Gritty-logo" class="responsive-img logo">
 	</div>
 </header>
 
 <main>
 	<div class="container">
-
+		
 		<div class="row">
 		    <div class="col s6 offset-s3">
 		      <ul class="tabs">
-		        <li class="tab col s6"><a href="#register">Register</a></li>
-		        <li class="tab col s6"><a class="active" href="#login">Login</a></li>
+		        <li class="tab col s6"><a class="active" id="reg" href="#register">Register</a></li>
+		        <li class="tab col s6"><a href="#login" id="log">Login</a></li>
 		      </ul>
 		    </div>
 
 		    <div id="register" class="col s12">
 		    	<form class="col s12">
+		    		{% csrf_token %}
 		    		<div class="row">
 		      			<div class="input-field col s6">
 			       			<i class="mdi-action-account-circle prefix"></i>
-			        		<input id="icon_prefix" type="text" class="validate">
+			        		<input name="userName" id="icon_prefix" type="text" class="validate">
 			        		<label for="icon_prefix">User Name</label>
 		      			</div>
 			      		<div class="input-field col s6">
 					        <i class="mdi-communication-email prefix"></i>
-					        <input id="icon_email" type="tel" class="validate">
+					        <input id="icon_email" name="email" type="email" class="validate">
 					        <label for="icon_email">Email</label>
 			     		 </div>
 		    		</div>
-		  		</form>
+		  		</form> <!-- End Form -->
 			</div>
 
 		    <div id="login" class="col s12">
 			    	<form class="col s12">
+			    		{% csrf_token %}
 			    		<div class="row">
 			      			<div class="input-field col s12">
 				       			<i class="mdi-maps-directions prefix"></i>
-				        		<input id="icon_act" type="text" class="validate">
+				        		<input id="icon_act" name="testId" type="text" class="validate">
 				        		<label for="icon_act">Test ID</label>
 			      			</div>
 		
 			    		</div>
-			  		</form>
+			  		</form> <!-- End Form -->
 				</div>
 		    </div>
 			
@@ -60,7 +62,8 @@
 		<div class="row">
 			<div class="col s12">
 				<div class="col s4 offset-s5">
-					<button class="btn waves-effect waves-light orange accent-4" type="submit" name="action"> Go
+					<!-- Listener Button -->
+					<button class="btn waves-effect waves-light orange accent-4" id="submit" name="action"> Go
 				    <i class="mdi-content-send right"></i>
 				 	</button>
 			 	</div>
