@@ -7,3 +7,6 @@ def home(request):
 	d = {} 
 	return render_to_response('home.html',d,context_instance=RequestContext(request))
 
+def login(request):
+	d = {} 
+	return render_to_response('login.html',d,context_instance=RequestContext(request))

@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" href={% static "css/form.css" %} type="text/css" />
+{% endblock %}
+
+{% block content %}
+
+<header>
+	<div class="banner">
+		<img src="{% static "img/logo.png" %}" alt="Gritt-logo" class="responsive-img logo">
+	</div>
+</header>
+
+<main>
+	<div class="container">
+
+		<div class="row">
+		    <div class="col s6 offset-s3">
+		      <ul class="tabs">
+		        <li class="tab col s6"><a href="#register">Register</a></li>
+		        <li class="tab col s6"><a class="active" href="#login">Login</a></li>
+		      </ul>
+		    </div>
+
+		    <div id="register" class="col s12">
+		    	<form class="col s12">
+		    		<div class="row">
+		      			<div class="input-field col s6">
+			       			<i class="mdi-action-account-circle prefix"></i>
+			        		<input id="icon_prefix" type="text" class="validate">
+			        		<label for="icon_prefix">User Name</label>
+		      			</div>
+			      		<div class="input-field col s6">
+					        <i class="mdi-communication-email prefix"></i>
+					        <input id="icon_email" type="tel" class="validate">
+					        <label for="icon_email">Email</label>
+			     		 </div>
+		    		</div>
+		  		</form>
+			</div>
+
+		    <div id="login" class="col s12">
+			    	<form class="col s12">
+			    		<div class="row">
+			      			<div class="input-field col s12">
+				       			<i class="mdi-maps-directions prefix"></i>
+				        		<input id="icon_act" type="text" class="validate">
+				        		<label for="icon_act">Test ID</label>
+			      			</div>
+		
+			    		</div>
+			  		</form>
+				</div>
+		    </div>
+			
+		</div>
+
+		<div class="row">
+			<div class="col s12">
+				<div class="col s4 offset-s5">
+					<button class="btn waves-effect waves-light orange accent-4" type="submit" name="action"> Go
+				    <i class="mdi-content-send right"></i>
+				 	</button>
+			 	</div>
+		 	</div>
+		</div>
+
+	</div>
+</main>
+
+{% endblock %}
